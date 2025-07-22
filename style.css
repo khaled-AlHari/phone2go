@@ -1,0 +1,64 @@
+/* Brand colors */
+:root {
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo-container img {
+  width: 40vw; /* 40% من عرض الشاشة */
+  max-width: 400px; /* لا يتجاوز 400px على الشاشات الكبيرة */
+  min-width: 200px; /* لا يقل عن 200px على الشاشات الصغيرة */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Coming Soon Text */
+.coming-soon-text {
+  text-align: center;
+  color: #fa8908;
+}
+
+.coming-soon-text h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-container img {
+    width: 50vw;
+    max-width: 300px;
+  }
+
+  .coming-soon-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container img {
+    width: 60vw;
+    max-width: 250px;
+  }
+
+  .coming-soon-text p {
+    font-size: 1.2rem;
+  }
+}
